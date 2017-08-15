@@ -17,11 +17,11 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
-      - {label: "Post Excerpt (used in archive)", name: "excerpt", widget: "string"}
-      - {label: "Link Type Post (leave empty for normal posts)", name: "link", widget: "string"}
+      - {label: "Post Excerpt (used in archive)", name: "excerpt", widget: "string", required: false}
+      - {label: "Link Type Post (leave empty for normal posts)", name: "link", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Categories", name: "categories", widget: "list"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: false}
       - {label: "Social Share", name: "share", widget: "boolean", default: true}
       - {label: "Published", name: "published", widget: "boolean", default: true}
