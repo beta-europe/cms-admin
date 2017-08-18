@@ -36,3 +36,51 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Show Edit Source", name: "source", widget: "boolean", default: true}
     meta:
       - {label: "SEO Description", name: "description", widget: "text"}
+  - name: "partner"
+    label: "Partner"
+    folder: "_partners"
+    sort: "title:asc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Slug", name: "slug", widget: "string", required: true}
+      - {label: "Website (e.g. http://meu.eu)", name: "website", widget: "string", required: false}
+      - {label: "Twitter Handle (without at)", name: "twitter", widget: "string", required: false}
+      - {label: "Mail", name: "mail", widget: "string", required: false}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "President", name: "president", widget: "string", required: false}
+      - {label: "Country", name: "country", widget: "string", required: true}
+      - {label: "Town", name: "town", widget: "string", required: true}
+      - {label: "Location", name: "location", widget: "string", required: false}
+      - {label: "Members", name: "members", widget: "string", required: false}
+      - {label: "Geo Location (e.g.: 52.2333,20.8891)", name: "geo", widget: "string", required: false}
+      - {label: "Conferences Series", name: "conferences", widget: "list", required: false}
+      # - {label: "conferences", name: "conferences", widget: "relation", collection: "conference", searchFields: ["conference"], valueField: "conference"}
+      - {label: "Show Edit Source", name: "source", widget: "boolean", default: true}
+      - {label: "Partner Description", name: "body", widget: "markdown"}
+  - name: "conference"
+    label: "Conference"
+    folder: "_conferences"
+    sort: "title:asc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Slug", name: "slug", widget: "string", required: true}
+      - {label: "Partner Slug", name: "partner-slug", widget: "string", required: false}
+      # - {label: "Partner Slug", name: "partner-slug", widget: "relation", collection: "partner", searchFields: ["title"], valueField: "slug"}
+      - {label: "Conference Series", name: "conference", widget: "string"}
+      - {label: "Year", name: "year", widget: "string", required: true}
+      - {label: "Conference Start", name: "begin", widget: "date", format: "YYYY-MM-DD", required: true}
+      - {label: "Conference End", name: "end", widget: "date", format: "YYYY-MM-DD", required: true}
+      - {label: "Mail", name: "mail", widget: "string"}
+      - {label: "Website (e.g. http://mywebsite.eu)", name: "website", widget: "string"}
+      - {label: "Twitter Handle (without at)", name: "twitter", widget: "string"}
+      - {label: "Country", name: "country", widget: "string"}
+      - {label: "Town", name: "town", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Participant Number", name: "participants", widget: "string"}
+      - {label: "Geo Location (e.g.: 52.2333,20.8891)", name: "geo", widget: "string"}
+      - {label: "Show Edit Source", name: "source", widget: "boolean", default: true}
+      - {label: "Topic Excerpt (used in archive)", name: "excerpt", widget: "string"}
+      - {label: "Conference Description", name: "body", widget: "markdown"}
