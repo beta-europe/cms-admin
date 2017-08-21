@@ -7,6 +7,7 @@ backend:
 
 media_folder: "assets/images"
 
+
 collections: # A list of collections the CMS should be able to edit
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
@@ -17,16 +18,23 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
+      - {label: "Post Excerpt (used in archive)", name: "excerpt", widget: "string", required: false}
+      - {label: "Link Post (optional)", name: "link", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Post Excerpt (used in archive)", name: "excerpt", widget: "string"}
-      - {label: "Link Type Post (leave empty for normal posts)", name: "link", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Categories", name: "categories", widget: "list"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Comments", name: "comments", widget: "boolean", default: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Read Time", name: "read_time", widget: "boolean", default: true}
       - {label: "Social Share", name: "share", widget: "boolean", default: true}
       - {label: "Published", name: "published", widget: "boolean", default: true}
       - {label: "Show Edit Source", name: "source", widget: "boolean", default: true}
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - label: "Cover Image"
+              name: "header"
+              widget: "object"
+              required: false
+              fields:
+                - {label: "Image", name: "image", widget: "image"}
+                - {label: "Credit Label", name: "credit", widget: "markdown", required: false}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
     meta:
       - {label: "SEO Description", name: "description", widget: "text"}
