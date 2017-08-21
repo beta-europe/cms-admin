@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: beta-europe/beta-europe.github.io   # Path to your Github repository
+  repo: beta-europe/france.beta-europe.org   # Path to your Github repository
   branch: master    # Branch to update
   base_url: https://cmsauth.beta-europe.org # Path to ext auth provider
 
