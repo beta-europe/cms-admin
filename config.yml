@@ -56,8 +56,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Geo Location (e.g.: 52.2333,20.8891)", name: "geo", widget: "string", required: false}
       - {label: "Conferences Series", name: "conferences", widget: "list", required: false}
       # - {label: "conferences", name: "conferences", widget: "relation", collection: "conference", searchFields: ["conference"], valueField: "conference"}
-      - {label: "Show Edit Source", name: "source", widget: "boolean", default: true}
-      - {label: "Partner Description", name: "body", widget: "markdown"}
+      - {label: "Show Edit Source", name: "source", widget: "boolean", default: true, required: false}
+      - {label: "Partner Description", name: "body", widget: "markdown", required: false}
   - name: "conference"
     label: "Conference"
     folder: "_conferences"
@@ -81,6 +81,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Location", name: "location", widget: "string"}
       - {label: "Participant Number", name: "participants", widget: "string"}
       - {label: "Geo Location (e.g.: 52.2333,20.8891)", name: "geo", widget: "string"}
-      - {label: "Show Edit Source", name: "source", widget: "boolean", default: true}
+      - {label: "Show Edit Source", name: "source", widget: "boolean", default: true, required: false}
       - {label: "Topic Excerpt (used in archive)", name: "excerpt", widget: "string"}
-      - {label: "Conference Description", name: "body", widget: "markdown"}
+      - {label: "Conference Description", name: "body", widget: "markdown", required: false}
