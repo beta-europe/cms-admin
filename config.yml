@@ -85,6 +85,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Thumbnail for Partner Overview", name: "teaser", widget: "image", required: false}
           - {label: "Label (e.g. for credit)", name: "credit", widget: "string", required: false}
+{% endraw %}{% if site.cms.has_conference %}
   - name: "conference"
     label: "Conference"
     folder: "_conferences"
@@ -117,6 +118,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Image", name: "image", widget: "image", required: false}          
           - {label: "Thumbnail for Image", name: "teaser", widget: "image", required: false}
           - {label: "Label (e.g. for credit)", name: "credit", widget: "string", required: false}
+{% endif %}{% raw %}
   - name: "settings"
     label: "Settings"
     files:
