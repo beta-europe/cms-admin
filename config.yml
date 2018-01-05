@@ -7,7 +7,7 @@ backend:
   repo: {{ site.repository }} # Path to your Github repository
   branch: master # Branch to update (master by default)
   base_url: https://cmsauth.beta-europe.org # Path to ext auth provider
-
+{% raw %}
 media_folder: "assets/images" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
@@ -119,3 +119,4 @@ collections: # A list of collections the CMS should be able to edit
                   - name: url
                     label: "URL (e.g. /about/ or https://twitter.com)"
                     widget: string
+{% endraw %}
