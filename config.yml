@@ -35,7 +35,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "object"
         required: false
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false}          
+          - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Thumbnail for Image", name: "teaser", widget: "image", required: false}
           - {label: "Label (e.g. for credit)", name: "credit", widget: "string", required: false}
   - name: "pages"
@@ -46,14 +46,14 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Modified Date", name: "modified", widget: "datetime", required: true}
-      - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Excerpt", name: "excerpt", widget: "string", reqired: false}
+      - {label: "Body", name: "body", widget: "markdown"}
       - label: "Cover Image"
         name: "header"
         widget: "object"
         required: false
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false}          
+          - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Thumbnail for Image", name: "teaser", widget: "image", required: false}
           - {label: "Label (e.g. for credit)", name: "credit", widget: "string", required: false}
       - {label: "Show Author/Organisation Profile", name: "author_profile", widget: "boolean", required: false, default: true}
@@ -63,7 +63,7 @@ collections: # A list of collections the CMS should be able to edit
         required: false
         fields:
           - {label: "Title", name: "title", widget: "string", required: false}
-          - {label: "Navigation Element, e.g. 'team'", name: "nav", widget: "string", required: false}
+          - {label: "Navigation Element", name: "nav", widget: "string", required: false}
           - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Image Description", name: "image_alt", widget: "string", required: false}
           - {label: "Text", name: "text", widget: "markdown", required: false}
@@ -126,7 +126,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "object"
         required: false
         fields:
-          - {label: "Image", name: "image", widget: "image", required: false}          
+          - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Thumbnail for Image", name: "teaser", widget: "image", required: false}
           - {label: "Label (e.g. for credit)", name: "credit", widget: "string", required: false}
 {% endif %}{% raw %}
