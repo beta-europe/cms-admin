@@ -56,6 +56,17 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Image", name: "image", widget: "image", required: false}          
           - {label: "Thumbnail for Image", name: "teaser", widget: "image", required: false}
           - {label: "Label (e.g. for credit)", name: "credit", widget: "string", required: false}
+      - {label: "Show Author/Organisation Profile", name: "author_profile", widget: "boolean", required: false, default: true}
+      - label: "Sidebar"
+        name: "sidebar"
+        widget: "object"
+        required: false
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false}
+          - {label: "Navigation Element, e.g. 'team'", name: "nav", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Description", name: "image_alt", widget: "string", required: false}
+          - {label: "Text", name: "text", widget: "markdown", required: false}
   - name: "partner"
     label: "Partner"
     folder: "_partners"
