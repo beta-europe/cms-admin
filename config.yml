@@ -49,6 +49,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Modified Date", name: "modified", widget: "datetime", required: true}
       - {label: "Excerpt", name: "excerpt", widget: "string", reqired: false}
       - {label: "Show Table of Contents", name: "toc", widget: "boolean", default: false, required: false}
+      - {label: "Social Share", name: "share", widget: "boolean", default: true, required: false}
+      - {label: "Published", name: "published", widget: "boolean", default: true, required: false}
+      - {label: "Show Edit Source", name: "edit", widget: "boolean", default: true, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Cover Image"
         name: "header"
