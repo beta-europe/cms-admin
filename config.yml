@@ -26,6 +26,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "select", options: ["association", "network"], required: false}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+      - {label: "Show Table of Contents", name: "toc", widget: "boolean", default: false, required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: false, required: false}
       - {label: "Social Share", name: "share", widget: "boolean", default: true, required: false}
       - {label: "Published", name: "published", widget: "boolean", default: true, required: false}
@@ -47,6 +48,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Modified Date", name: "modified", widget: "datetime", required: true}
       - {label: "Excerpt", name: "excerpt", widget: "string", reqired: false}
+      - {label: "Show Table of Contents", name: "toc", widget: "boolean", default: false, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Cover Image"
         name: "header"
