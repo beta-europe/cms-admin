@@ -113,7 +113,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Slug (e.g. meu-strasbourg-2015)", name: "slug", widget: "string", required: true}
       - {label: "Partner Slug (e.g. beta-france)", name: "partner-slug", widget: "relation", collection: "partner", searchFields: ["title"], valueField: "slug", required: false}
       - {label: "Conference Series (e.g. meu-strasbourg)", name: "conference", widget: "string", required: true}
-      - {label: "Year", name: "year", widget: "string", required: true, pattern: ['\d{4}', "Provide conference year."]}
+      - {label: "Year", name: "year", widget: "number", valueType: "int", required: true, pattern: ['\d{4}', "Provide conference year."], default: 2018}
       - {label: "Conference Start", name: "begin", widget: "date", format: "YYYY-MM-DD", required: true}
       - {label: "Conference End", name: "end", widget: "date", format: "YYYY-MM-DD", required: true}
       - {label: "Mail", name: "mail", widget: "string"}
