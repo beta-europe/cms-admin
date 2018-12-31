@@ -9,6 +9,7 @@ backend:
   base_url: https://cmsauth.beta-europe.org # Path to ext auth provider
 {% raw %}
 media_folder: "assets/images" # Folder where user uploaded files should go
+logo_url: "https://www.beta-europe.org/assets/images/beta-logo-200-transparent.png"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
