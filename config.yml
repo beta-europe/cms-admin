@@ -126,7 +126,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Country", name: "country", widget: "string", required: false}
       - {label: "Town", name: "town", widget: "string", required: false}
       - {label: "Location", name: "location", widget: "string", required: false}
-      - {label: "Members (in Member association)", name: "members", widget: "string", required: false}
       - {label: "Geo Location (e.g.: 52.2333,20.8891)", name: "geo", widget: "string", required: false}
       # - {label: "conferences", name: "conferences", widget: "relation", collection: "conference", searchFields: ["conference"], valueField: "conference"}
       - {label: "Member Description", name: "body", widget: "markdown", required: false}
