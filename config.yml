@@ -213,7 +213,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Slug", name: "slug", widget: "string", required: true}
       - {label: "Order", name: "order", widget: "string", required: true}
-      - {label: "Name", name: "name", widget: "string", required: true}
+      - {label: "Name of Teammember", name: "nameTM", widget: "string", required: true}
       - {label: "Function", name: "function", widget: "string", required: true}
       - {label: "Mail", name: "mail", widget: "string"}
       - label: "Cover Image"
