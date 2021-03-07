@@ -3,7 +3,7 @@ kate: hl yaml;
 layout: null
 ---
 backend:
-  name: github
+  name: git-gateway
   repo: {{ site.repository }} # Path to your Github repository
   branch: master # Branch to update (master by default)
 #  base_url: https://cmsauth.beta-europe.org # Path to ext auth provider
